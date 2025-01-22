@@ -68,7 +68,7 @@ func main() {
 	http.HandleFunc("/", serveRandomImage)
 
 	// Specify the port on which to run the server.
-	port := "80"
+	port := "8080"
 	fmt.Printf("Server started on http://localhost:%s\n", port)
 
 	// Start the HTTP server on the specified port.
