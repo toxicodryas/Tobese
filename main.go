@@ -22,7 +22,7 @@ var imageFiles = []string{
 	"images/toefat8.jpg",
 	"images/toefat9.jpg",
 	"images/toefat10.jpg",
-	"images/toefat11jpg",
+	"images/toefat11.jpg",
 	"images/toefat12.jpg",
 	"images/toefat13.jpg",
 	"images/toefat14.jpg",
