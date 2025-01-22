@@ -48,14 +48,20 @@ func getRandomImage() string {
 
 // serveRandomImage handles HTTP requests and serves a random image to the user.
 // It uses the getRandomImage function to select the image to serve.
+// serveRandomImage handles HTTP requests and serves a random image to the user.
 func serveRandomImage(w http.ResponseWriter, r *http.Request) {
+	// Set cache control headers to prevent caching
+	w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate") // Prevent caching
+	w.Header().Set("Pragma", "no-cache")                                 // Older HTTP/1.0 caches
+	w.Header().Set("Expires", "0")                                        // Prevent caching
+
 	// Get a random image file path from the image list
 	imagePath := getRandomImage()
 
 	// Serve the selected image file to the user
-	// http.ServeFile sends the contents of the specified file as the HTTP response.
 	http.ServeFile(w, r, imagePath)
 }
+
 
 func main() {
 	// Serve static files from the "images" directory.
