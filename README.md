@@ -62,7 +62,7 @@ Tobese/
 
 4. Run the server:
    ```bash
-   ./tobese
+   ./Tobese
    ```
 
 5. The server will start on port 8080 by default. You can now access the website at http://localhost:8080
