@@ -25,7 +25,7 @@ Tobese.org is a lightweight web application built in Go that randomly selects an
 ## Directory Structure
 
 ```
-tobese.org/
+Tobese/
 │
 ├── main.go         # The main application code
 ├── images/         # Directory containing Tobi's images
